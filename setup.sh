@@ -18,6 +18,9 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.12
 nvm use v0.12
 
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
