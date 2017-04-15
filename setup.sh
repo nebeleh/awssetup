@@ -13,7 +13,7 @@ sudo apt-get install -y git-core build-essential libssl-dev
 wget https://raw.github.com/creationix/nvm/master/install.sh
 bash install.sh
 
-# Load nvm and install latest production node
+# Install Node.js
 source $HOME/.nvm/nvm.sh
 nvm install v0.12
 nvm use v0.12
