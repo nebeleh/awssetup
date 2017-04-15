@@ -7,23 +7,9 @@ curr_dir=`pwd`
 dir=`dirname $0`
 FILE_PATH=`cd  $dir;pwd`
 
-# Install nvm: node-version manager
-# https://github.com/creationix/nvm
-sudo apt-get install -y git-core build-essential libssl-dev
-wget https://raw.github.com/creationix/nvm/master/install.sh
-bash install.sh
-
-# Install Node.js 
-source $HOME/.nvm/nvm.sh
-nvm install v0.12
-nvm use v0.12
-
+# Install Node.js & rlwrap
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-# Install rlwrap to provide libreadline features with node
-# See: http://nodejs.org/api/repl.html#repl_repl
-sudo apt-get install -y rlwrap
+sudo apt-get install -y nodejs rlwrap
 
 # git pull and install dotfiles as well
 cd $HOME
